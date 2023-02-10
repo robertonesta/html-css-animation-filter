@@ -128,3 +128,16 @@
     filter: blur(20%) contrast(50%);
 }
 
+.ex-9-img:hover{
+    border-radius: 50%;
+    filter: sepia(100%) blur(15%);
+    scale: 0.5;
+}
+
+.ex-9-img{
+    transition: border-radius 1s, filter: 1s, scale 1s;
+}
+
+.ex-10-icon {
+    animation: spin infinite 1s linear;
+}
