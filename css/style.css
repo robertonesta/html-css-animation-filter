@@ -103,3 +103,15 @@
     opacity: 0;
 }
 
+.ex-5-square{
+    transition: scale 2s;
+}
+
+.ex-5-square:hover{
+    scale: 2;
+}
+
+.ex-5-square:active{
+    scale: 0.5;
+}
+
