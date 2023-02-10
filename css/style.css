@@ -186,7 +186,40 @@
     100%{
         transform: rotate(360deg);
     }
+}
+.ex-12-top-white:hover{
+    animation: top 2s linear;
 
+}
+.ex-12-top-white {
+    animation: top 2s linear;
+}
+@keyframes top {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: calc(50%);
+    }
+    100% {
+        left: 0%;
+    }
+}
 
-
+.ex-12-bottom-white:hover{
+    animation: bottom 2s linear;
+}
+.ex-12-bottom-white {
+    animation: bottom 2s linear;
+}
+@keyframes bottom {
+    0% {
+        right: 0%;
+    }
+    50% {
+        right: calc(50%);
+    }
+    100% {
+        right: 0%;
+    }
 }
