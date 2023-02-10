@@ -3,11 +3,13 @@
     height: 100px;
     border: 1px solid red;
 }
+
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
 }
+
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -67,3 +69,30 @@
     width: 60px;
     height: 20px;
 }
+
+/* animations */
+
+.ex-1-square{
+    transition: background-color 2s;
+}
+.ex-1-square:hover{
+    background-color: red;
+}
+
+.ex-2-square:active{
+    width: 200px;
+    height: 100px;
+}
+
+.ex-2-square{
+    transition: width 2s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50% ;
+}
+.ex-3-square{
+    transition: border-radius 2s;
+}
+
+
