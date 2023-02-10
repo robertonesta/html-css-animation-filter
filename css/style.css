@@ -187,39 +187,48 @@
         transform: rotate(360deg);
     }
 }
-.ex-12-top-white:hover{
-    animation: top 2s linear;
+.ex-13-top-white:hover{
+    animation: top 2s linear infinite;
 
 }
-.ex-12-top-white {
-    animation: top 2s linear;
+.ex-13-top-white {
+    animation: top 2s linear infinite;
 }
 @keyframes top {
     0% {
         left: 0%;
     }
+    25%{
+        left: 25%;
+    }
     50% {
-        left: calc(50%);
+        left: 50%;
+    }
+    75% {
+        left:75%
     }
     100% {
-        left: 0%;
+        left: 100%;
     }
 }
 
 .ex-12-bottom-white:hover{
-    animation: bottom 2s linear;
+    animation: bottom 2s linear infinite;
 }
 .ex-12-bottom-white {
-    animation: bottom 2s linear;
+    animation: bottom 2s linear infinite;
 }
 @keyframes bottom {
     0% {
         right: 0%;
     }
+    25%{
+        right: 25%;
+    }
     50% {
-        right: calc(50%);
+        right: 50%;
     }
     100% {
-        right: 0%;
+        right: 100%;
     }
 }
