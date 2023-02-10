@@ -135,9 +135,26 @@
 }
 
 .ex-9-img{
-    transition: border-radius 1s, filter: 1s, scale 1s;
+    transition: border-radius 1s, filter 1s, scale 1s;
 }
 
 .ex-10-icon {
-    animation: spin infinite 1s linear;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
