@@ -187,11 +187,8 @@
         transform: rotate(360deg);
     }
 }
-.ex-13-top-white:hover{
-    animation: top 2s linear infinite;
 
-}
-.ex-13-top-white {
+.ex-12-top-white {
     animation: top 2s linear infinite;
 }
 @keyframes top {
@@ -212,9 +209,7 @@
     }
 }
 
-.ex-12-bottom-white:hover{
-    animation: bottom 2s linear infinite;
-}
+
 .ex-12-bottom-white {
     animation: bottom 2s linear infinite;
 }
@@ -230,5 +225,64 @@
     }
     100% {
         right: 100%;
+    }
+}
+
+.ex-13-top-white{
+    animation-name: top;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes top{
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+    25%{
+        left: calc(100% - 60px);
+        top: -25px;
+    }
+    50%{
+        left: calc(100% - 30%);
+        top:50px;
+    }
+    75%{
+        left: calc(0% - 60px);
+        top: 25px;
+    }
+    100%{
+        left: 0%;
+        top: 0%
+    }
+}
+.ex-13-bottom-white{
+    animation-name: bottom;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bottom{
+    0%{
+        right: 0%;
+        bottom: 0%;
+    }
+    25%{
+        right: calc(100% - 60px);
+        bottom: -25px;
+    }
+    50%{
+        right: calc(100% - 30%);
+        bottom:50px;
+    }
+    75%{
+        right: calc(0% - 60px);
+        bottom: 25px;
+    }
+    100%{
+        right: 0%;
+        bottom: 0%
     }
 }
